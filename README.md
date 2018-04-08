@@ -1,4 +1,4 @@
-# FEWD Week #4: Responsive Design
+# FEWD Assignment #4: Responsive Design
 
 ---
 
