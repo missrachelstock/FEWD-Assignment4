@@ -38,6 +38,28 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+blockquote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 580px;
+  margin: 0 auto;
+}
+
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -49,60 +71,9 @@ a {
   margin: 0 auto;
 }
 
-.logo {
-  font-size: 48px;
-  font-weight: 800;
-}
-
-header {
-  background: #033048;
-  padding: 25px 0;
-  overflow: hidden;
-}
-
-header .container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-header .logo {
-  color: #fff;
-}
-
-nav ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin-left: 40px;
-  font-size: 24px;
-}
-
-nav li:first-child {
-  margin-left: 0;
-}
-
-nav a {
-  color: #f9e42e;
-}
-
-.hero {
-  min-height: 700px;
-  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
-  background-size: cover;
-  padding-top: 32px;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 48px;
-  color: #fff;
-  margin: 120px 0 90px;
-  font-weight: 600;
-}
+/******************************************
+/* BUTTONS
+/*******************************************/
 
 .button {
   border-radius: 5px;
@@ -125,15 +96,79 @@ nav a {
   font-size: 24px;
 }
 
-.benefits {
-  padding: 100px 0 80px;
+/******************************************
+/* HEADER
+/*******************************************/
+
+.logo {
+  font-size: 48px;
+  font-weight: 800;
 }
 
-h3 {
-  color: #033048;
-  font-size: 40px;
+header {
+  background: #033048;
+  padding: 25px 0;
+  overflow: hidden;
+}
+
+header .container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: #fff;
+}
+
+/******************************************
+/* NAV
+/*******************************************/
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 40px;
+  font-size: 24px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #f9e42e;
+}
+
+/******************************************
+/* HERO
+/*******************************************/
+
+.hero {
+  min-height: 700px;
+  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
+  background-size: cover;
+  padding-top: 32px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+  color: #fff;
+  margin: 120px 0 90px;
   font-weight: 600;
-  margin-bottom: 40px;
+}
+
+/******************************************
+/* BENEFITS
+/*******************************************/
+
+.benefits {
+  padding: 100px 0 80px;
 }
 
 .benefits p,
@@ -146,6 +181,10 @@ h3 {
   margin: 30px 0 0 80px;
 }
 
+/******************************************
+/* TESTIMONIAL
+/*******************************************/
+
 .testimonial {
   background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
   background-size: cover;
@@ -153,20 +192,9 @@ h3 {
   color: #fff;
 }
 
-blockquote {
-  font-size: 36px;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  width: 580px;
-  margin: 0 auto;
-}
-
-blockquote span {
-  font-weight: 600;
-  display: block;
-  font-style: normal;
-}
+/******************************************
+/* MAIN
+/*******************************************/
 
 .main {
   margin-top: 80px;
@@ -261,11 +289,19 @@ blockquote span {
   font-weight: 600;
 }
 
+/******************************************
+/* BOTTOM CTA
+/*******************************************/
+
 .bottom-cta {
   background: #f9e42e;
   padding: 30px;
   text-align: center;
 }
+
+/******************************************
+/* FOOTER
+/*******************************************/
 
 footer {
   background: #121212;
@@ -276,6 +312,12 @@ footer {
 footer .logo {
   color: #f9e42e;
   margin-bottom: 68px;
+}
+
+footer p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
 }
 
 .social {
@@ -289,10 +331,4 @@ footer .logo {
 .social > li {
   margin-left: 26px;
   margin-right: 26px;
-}
-
-footer p {
-  font-size: 18px;
-  color: #fff;
-  font-weight: 600;
 }
