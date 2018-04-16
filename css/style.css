@@ -1,8 +1,8 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Assignment 4
+Client: Relaxr
+Author: Rachel Stock
+UX Designer @GA in DC
 */
 
 /******************************************
@@ -46,11 +46,11 @@ h3 {
 }
 
 blockquote {
-  font-size: 36px;
+  font-size: 16px;
   font-weight: 300;
   font-style: italic;
   text-align: center;
-  width: 580px;
+  width: 280px;
   margin: 0 auto;
 }
 
@@ -67,7 +67,7 @@ blockquote span {
 /* Center the container */
 
 .container {
-  width: 960px;
+  width: 400px;
   margin: 0 auto;
 }
 
@@ -79,8 +79,8 @@ blockquote span {
   border-radius: 5px;
   font-weight: 800;
   padding: 12px 0;
-  min-width: 280px;
-  font-size: 28px;
+  min-width: 180px;
+  font-size: 18px;
   text-align: center;
   display: inline-block;
 }
@@ -101,7 +101,7 @@ blockquote span {
 /*******************************************/
 
 .logo {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 800;
 }
 
@@ -114,7 +114,7 @@ header {
 header .container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 header .logo {
@@ -126,7 +126,7 @@ header .logo {
 /*******************************************/
 
 nav ul {
-  display: flex;
+  display: none;
   margin: 0;
   padding: 0;
 }
@@ -157,7 +157,7 @@ nav a {
 }
 
 .hero h2 {
-  font-size: 48px;
+  font-size: 36px;
   color: #fff;
   margin: 120px 0 90px;
   font-weight: 600;
@@ -173,7 +173,8 @@ nav a {
 
 .benefits p,
 .benefits ul {
-  width: 600px;
+  width: 400px;
+  font-size: 16px;
 }
 
 .benefits ul {
@@ -202,6 +203,7 @@ nav a {
 
 .main .container {
   display: flex;
+  flex-direction: column;
 }
 
 .posts {
@@ -331,4 +333,91 @@ footer p {
 .social > li {
   margin-left: 26px;
   margin-right: 26px;
+}
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+/* ------------
+/* DESKTOP
+/* -----------*/
+
+@media (min-width: 768px) {
+  .hero h2 {
+    font-size: 48px;
+  }
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .button {
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 12px 0;
+    min-width: 280px;
+    font-size: 28px;
+    text-align: center;
+    display: inline-block;
+  }
+  nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  }
+
+  nav li {
+    margin-left: 40px;
+    font-size: 24px;
+  }
+
+  nav li:first-child {
+    margin-left: 0;
+  }
+
+  nav a {
+    color: #f9e42e;
+  }
+  .logo {
+    font-size: 48px;
+    font-weight: 800;
+  }
+  header .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .benefits {
+    padding: 100px 0 80px;
+  }
+
+  .benefits p,
+  .benefits ul {
+    width: 600px;
+    font-size: 26px;
+  }
+
+  .benefits ul {
+    list-style: disc;
+    margin: 30px 0 0 80px;
+  }
+  blockquote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    width: 580px;
+    margin: 0 auto;
+  }
+
+  blockquote span {
+    font-weight: 600;
+    display: block;
+    font-style: normal;
+  }
+  .main .container {
+    display: flex;
+    flex-direction: row;
+  }
 }
